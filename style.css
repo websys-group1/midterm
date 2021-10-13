@@ -4,7 +4,7 @@
     background-color: blue;
 }
 
-#container{
+#maincontainer{
     /* wih displayflex, the cards are side by side*/
     display:flex;
     justify-content: center;
@@ -13,6 +13,19 @@
     background-color: green;
 }
 
+.headcontainer
+{
+    width: 1226px;
+    height: 20px;
+    margin: 0 auto;
+}
+.logo
+{
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+  
 .card{
     background-color: white;
     width: 270px;
