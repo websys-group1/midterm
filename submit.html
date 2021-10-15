@@ -47,7 +47,7 @@
 
     <form class="needs-validation" action="/posts.html" novalidate>
         <div id="title" class="form-row">
-            <div class="col-md-6 mb-3">
+            <div class="col-md-4 mb-3">
                 <label for="validationCustom03">Title</label>
                 <input type="text" class="form-control" id="validationCustom03" placeholder="Title" required>
                 <div class="invalid-feedback">
@@ -55,10 +55,10 @@
                 </div>
             </div>
         </div>
-        <div id="description" class="form-group">
+        <div id="description" class="col-md-6 mb-3">
             <label for="validationCustom03">Comment:</label>
             <!-- <input type="text" class="form-control" rows="5" id="validationCustom03" placeholder="comment" required> -->
-            <textarea class="form-control" rows="5" id="validationCustom03" placeholder="Description of the item lost or found" required></textarea>
+            <textarea class="form-control" rows="5" id="validationCustom03" placeholder="Description of the item either lost or found" required></textarea>
             <div class="invalid-feedback">
                 Please provide a valid comment of the post.
             </div>
@@ -95,7 +95,7 @@
             </div>
         </div>
         <div id="email" class="form-row">
-            <div class="col-md-6 mb-3">
+            <div class="col-md-4 mb-3">
                 <label for="validationCustom03">Email</label>
                 <input type="text" class="form-control" id="validationCustom03" placeholder="Email" required>
                 <div class="invalid-feedback">
@@ -113,6 +113,8 @@
                 </div>
             </div>
         </div>
+        <div id="case_option">
+            <label for="validationCustom03">Case</label>
         <div id="lost" class="custom-control custom-radio custom-control-inline">
             <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" required>
             <label class="custom-control-label" for="customRadioInline1">Lost Item</label>
@@ -121,6 +123,7 @@
             <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" required>
             <label class="custom-control-label" for="customRadioInline2">Found Item</label>
         </div>
+    </div>
     </br>
         <!-- <button class="btn btn-primary" type="submit" >Submit form</button> -->
         <input name="submitbtn" id="submitbtn" type="submit"> 
