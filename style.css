@@ -18,6 +18,10 @@
     background-image: url("backimg3.jpg");
 }
 
+#btn{
+    height:50px;
+}
+
 body{
     background-image: url("backimg3.jpg");
     background-size:cover;
@@ -67,11 +71,12 @@ body{
 .card a{
     background-color: navy;
     color:white;
-    padding: 15px 20px;
+    padding: 10px 15px;
     display:block;
     text-align: center;
     margin: 20px 50px;
     text-decoration: none;
+    bottom:0;
 }
 
 h1{
@@ -119,4 +124,8 @@ h1{
 
 #submitbtn{
     justify-content: center;
+}
+
+#txtArea{
+    margin-left: 10px;
 }
