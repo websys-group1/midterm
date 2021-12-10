@@ -1,0 +1,93 @@
+/*pageStyle- consistently applies to both the root page and the project page */
+
+/* imports two google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');  
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); /*Quiz2 Header, Menu, Footer use one unique font*/
+      html{
+        box-sizing: border-box;
+      }
+      *,*:before,*:after{
+        box-sizing: inherit;
+      }    
+      body {
+        font-family: 'Nanum Myeongjo', serif;   /*imported above- general text font except for the main title*/
+        /* background : lightsteelblue;           Background color to be seen outside of the box content */
+        background-image: url('../resources_1/Mario.gif'); /* import background img from resources folder */
+        background-repeat: no-repeat;
+        background-size: cover;   /* to make it cover a full page */
+      }
+      #TeamTitle{
+        font-family: 'Rock Salt', cursive;      /* imported above, main title font*/
+      }
+      .headerTitle{
+        font-family: 'Anton', sans-serif;
+        text-align: center;
+      }
+      .Slogan{
+          font-size: 1.2vw;
+          text-align: center;
+      }
+      .page{    /*Every content in the box named page*/
+        max-width: 1000px;
+        margin: 50px auto ;
+        padding: 32px;
+        background: rgb(255, 255, 255);      
+        }
+      /* .menu{
+        font-family: 'Anton', sans-serif;
+        border-top: 2px solid gray;
+        border-bottom: 2px solid gray;
+        line-height: 80%;
+        text-align: center;
+      }  */
+      .pageLists li{    /*list of hyperlinks to the different pages*/
+        list-style: none;
+        display: flex;    /* inline display-horizontal */
+        border-left:2px solid gray; /*line between links*/
+        padding:0 10px; 
+        vertical-align: middle;
+      }
+      .pageLists li:first-child{
+        border-left:none;   /* the left-most member shouldn't have a line on it's left */
+      }
+      .description{ /* Each unique page contains the description class division */
+        border-bottom: 2px solid gray;
+        line-height: 200%;  
+        text-align: center;
+      }
+      #pageDescription{
+        font-size: medium;
+      }
+      .articles li{     /* articles lists in center*/
+        list-style: none;
+        text-align: center;
+      }
+      .contents{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        text-align: center;
+        
+      }
+      #imageLinks li{   /*list of icons to resume,instagram,facebook*/
+        list-style: none;
+        display: inline;
+        padding:0 10px;
+      }    
+      #imageLinks img{  /*image size setting*/
+        width: 90px;
+        height: 90px;
+      }
+      
+      footer{   /* footer style*/
+        border-top: gray solid 2px; 
+        margin-top: 5%;
+        text-align: center;
+        font-family: 'Anton', sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      #bodyBlock {
+        width: 700px;
+        margin: auto;
+      }
